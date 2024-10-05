@@ -2,10 +2,16 @@
   "name": "multiple_file_test",
   "version": "1.0.0",
   "main": "testStudents.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --json --outputFile=test-results.json"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "babel-jest": "^29.7.0"
+  }
 }
